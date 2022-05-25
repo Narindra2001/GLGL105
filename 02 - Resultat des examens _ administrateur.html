@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Platforme de gestion des notes CNAM" />
+    <meta name="author" content="R. Narindra, R. Voahary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Resultat des examens</title>
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <!-- /global stylesheets -->
+</head>
+<style>
+    .form-control{
+        border-top: 0px;
+        border-radius: 0px;
+    }
+    .dataTables_filter, .dataTables_length, .dataTables_info, .dataTables_paginate{
+        padding: 15px 15px;
+        margin: 0px;
+    }
+    .label{
+        border-radius: 50px;
+    }
+</style>
+<body >
+<header>
+    <div class="navbar navbar-inverse bg-primary-color">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo-cnam.PNG" alt=""></a>
+
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile" class="legitRipple"><i class="icon-tree5"></i></a></li>
+                </ul>
+            </div>
+
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-grid6 position-left"></i> Mes services <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="02%20-%20Liste%20UE%20_%20administrateur.html"><i class="icon-notebook"></i> Formations/UE</a></li>
+                            <li><a href="02%20-%20Liste%20enseignant%20_%20administrateur.html"><i class="icon-people"></i> Enseignants</a></li>
+                            <li><a href="02%20-%20Liste%20des%20etudiants%20_%20administrateur.html"><i class="icon-people"></i> Auditeurs</a></li>
+                            <li><a href="02%20-%20Resultat%20des%20examens%20_%20administrateur.html"><i class="icon-list"></i> Resultat des examens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/demo/users/face11.jpg" alt="">
+                            <span>Bonjour, Admin</span>
+                            <i class="caret"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="02%20-%20Profile%20_%20administrateur.html"><i class="icon-user-plus"></i> Mon Profile</a></li>
+                            <li><a href="00%20-%20Login.html"><i class="glyphicon glyphicon-log-out"></i> Se Deconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container">
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="page-header-content">
+                <div class="page-title">
+                    <h4><i class="icon-users position-left"></i> <span class="text-semibold">Resultat des examens</span></h4>
+                    <a class="heading-elements-toggle"><i class="icon-more"></i></a></div>
+            </div>
+
+            <div class="breadcrumb-line breadcrumb-line-component"><a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+                <ul class="breadcrumb">
+                    <li><a href="02%20-%20Dashboard%20_%20administrateur.html"><i class="icon-home2 position-left"></i> Acceuil</a></li>
+                    <li class="active">Resultat des examens: 2022 - 2023</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /page header -->
+
+
+        <!-- Content area -->
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-lg nav-tabs nav-tabs-bottom search-results-tabs">
+                        <li class="active"><a href="search_basic.html" class="legitRipple"> Licence 1</a></li>
+                        <li><a href="search_users.html" class="legitRipple"> Licence 2</a></li>
+                        <li><a href="search_images.html" class="legitRipple"> Licence 3</a></li>
+                        <li><a href="search_videos.html" class="legitRipple"> Master 1</a></li>
+                        <li><a href="search_videos.html" class="legitRipple"> Master 2</a></li>
+                        <li><a href="search_videos.html" class="legitRipple"> Doctorat</a></li></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <!-- Complex headers with sorting -->
+                    <div class="panel panel-flat">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">Resultat des examens</h5>
+                            <div class="heading-elements">
+                                <ul class="icons-list">
+                                    <li><a data-action="reload"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="">
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button><button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                            </div>
+                        </div>
+
+                        <table class="table table-bordered datatable-complex-header table-note">
+                            <thead>
+                            <tr>
+                                <th rowspan="2">Auditeur</th>
+                                <th rowspan="2">Nom et Prenom</th>
+                                <th colspan="2" class="text-center">Session 1</th>
+                                <th colspan="2" class="text-center">Session 2</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 100px;">Notes</th>
+                                <th style="width: 150px;">Status</th>
+                                <th style="width: 100px;">Notes</th>
+                                <th style="width: 150px;">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>MDG26456548</td>
+                                <td>MDG26456548</td>
+                                <td>15</td>
+                                <td>
+
+                                    <span class="label label-success"><i class="icon-checkmark3 text-size-small"></i> admis</span>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>MDG56579825</td>
+                                <td>MDG56579825</td>
+                                <td>12</td>
+                                <td>
+                                    <span class="label label-success"><i class="icon-checkmark3 text-size-small"></i> admis</span>
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>MDG89785754</td>
+                                <td>MDG89785754</td>
+                                <td>09</td>
+                                <td>
+                                    <span class="label label-default">ajourne</span>
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /complex headers with sorting -->
+                </div>
+            </div>
+        </div>
+        <!-- /content area -->
+
+        <div id="modal_full" class="modal fade">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h5 class="modal-title text-bold">UE : MVA003</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs nav-tabs-bottom bottom-divided">
+                                <li class="active">
+                                    <a href="#bottom-semestre-1" data-toggle="tab" class="legitRipple">
+                                        <i class="icon-people position-left"></i>
+                                        LISTE DES AUDITEURS & RESULTATS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#bottom-semestre-2" data-toggle="tab" class="legitRipple">
+                                        <i class="icon-info3 position-left"></i>
+                                        DETAILS
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="bottom-semestre-1">
+                                    <table class="table datatable-html table-note">
+                                        <thead>
+                                        <tr>
+                                            <th>Auditeur</th>
+                                            <th>Nom et prenom</th>
+                                            <th>Notes S1</th>
+                                            <th>Notes S2</th>
+                                            <th class="text-center">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>MDG55665852</td>
+                                            <td>RAKOTOARISOA Narindra</td>
+                                            <td>14</td>
+                                            <td>--</td>
+                                            <td class="text-center">
+                                                <ul class="icons-list">
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                            <i class="icon-menu9"></i>
+                                                        </a>
+
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+                                                            <li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+                                                            <li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>MDG25646525</td>
+                                            <td>Hery Randria</td>
+                                            <td>14</td>
+                                            <td>--</td>
+                                            <td class="text-center">
+                                                <ul class="icons-list">
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                            <i class="icon-menu9"></i>
+                                                        </a>
+
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+                                                            <li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+                                                            <li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane" id="bottom-semestre-2">
+                                    <form action="#" class="form-horizontal">
+                                        <fieldset class="content-group">
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Code UE *</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre nom ...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Intituler</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre prenom...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">ECTS *</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre prenom...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Examen *</label>
+                                                <div class="col-lg-2">
+                                                    <select class="form-control bootstrap-select" data-width="100%">
+                                                        <option value="AK">Semestre 1</option>
+                                                        <option value="HI">Semestre 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Tuteur</label>
+                                                <div class="col-lg-4">
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" value="Mr Monsieur" readonly>
+                                                        <span class="input-group-btn">
+													<button class="btn btn-default legitRipple" type="button">CHANGER</button>
+												</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="text-left">
+                                            <button type="submit" class="btn btn-primary legitRipple">Enregister les mofications <i class="icon-arrow-right14 position-right"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="modal-backdrop fade "></div>
+        -->
+        <div class="page-container" style="display: none;"></div>
+    </div>
+</body>
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/datatables_sorting.js"></script>
+
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+<script type="application/javascript">
+    // Select item btn ue
+    $(".btn-ue").on("click", function (){
+        $(".btn-ue").removeClass("btn-ue-active");
+        $(this).addClass("btn-ue-active");
+    });
+    $(".tab-note-edit").on("click", function(){
+        $(this).children("span").fadeOut(0);
+        $(this).children("input").fadeIn(0);
+    });
+</script>
+<!-- /theme JS files -->
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Platforme de gestion des notes CNAM" />
+    <meta name="author" content="R. Narindra, R. Voahary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inserer des notes - Espace Enseignant</title>
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <!-- /global stylesheets -->
+</head>
+<body >
+    <header>
+    <div class="navbar navbar-inverse bg-primary-color">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo-cnam.PNG" alt=""></a>
+
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile" class="legitRipple"><i class="icon-tree5"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-grid6 position-left"></i> Mes services <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="01%20-%20Mes%20enseignements%20_%20enseignant.html"><i class="icon-notebook"></i> Mes enseignements</a></li>
+                            <li><a href="01%20-%20Liste%20des%20etudiants%20_%20enseignant.html"><i class="icon-people"></i> Liste des etudiants</a></li>
+                            <li><a href="01%20-%20Inerer%20des%20notes%20_%20enseignant.html"><i class="icon-list"></i> Inserer des notes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/demo/users/face11.jpg" alt="">
+                            <span>Bonjour, Admin</span>
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="01%20-%20Profile%20_%20enseignant.html"><i class="icon-user-plus"></i> Mon Profile</a></li>
+                            <li><a href="00%20-%20Login.html"><i class="glyphicon glyphicon-log-out"></i> Se Deconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container">
+
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="page-header-content">
+                <div class="page-title">
+                    <h4><i class="icon-pencil5 position-left"></i> <span class="text-semibold">Liste des notes</span></h4>
+                    <a class="heading-elements-toggle"><i class="icon-more"></i></a></div>
+            </div>
+
+            <div class="breadcrumb-line breadcrumb-line-component"><a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+                <ul class="breadcrumb">
+                    <li><a href="index.html"><i class="icon-home2 position-left"></i> Acceuil</a></li>
+                    <li class="active">Liste des notes</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /page header -->
+
+
+        <!-- Content area -->
+        <div class="content">
+            <div class="row">
+                <!--
+                <div class="col-lg-12">
+                    <div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
+                        <button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
+                        <h6 class="alert-heading text-semibold">Session timeout</h6>
+                        With these settings, session timeout plugin launches a timeout warning dialog in a fixed amount of time regardless of user activity. In this demo warning dialog appears <strong>after 10 seconds</strong> of page load.
+                    </div>
+                </div>
+                -->
+                <div class="col-lg-12 container-detached">
+                    <div class="content-detached">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <h5 class="content-group" style="margin-top:0px;">Licence L1</h5>
+                                <button type="button" class="btn btn-default btn-ue">MVA003</button>
+                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3" style="margin-top: 20px;">
+                            <div class="col-lg-12">
+                                <h5 class="content-group" style="margin-top:0px;">Licence L2</h5>
+                                <button type="button" class="btn btn-default btn-ue">MVA010</button>
+                                <button type="button" class="btn btn-default btn-ue">NFA011</button>
+                                <button type="button" class="btn btn-default btn-ue">UTC504</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content area -->
+
+    </div>
+    <div id="modal_full" class="modal fade in" style="display: block; padding-right: 16px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h5 class="modal-title text-bold">Notes UE : MVA003</h5>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="alert alert-info alert-styled-left text-blue-800 content-group">
+                        <span class="text-semibold">Alert!</span> Example d'alert modal.
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs nav-tabs-bottom bottom-divided">
+                            <li class="active">
+                                <a href="#bottom-semestre-1" data-toggle="tab" class="legitRipple">
+                                    <i class="icon-calendar2 position-left"></i>
+                                    SEMESTRE 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#bottom-semestre-2" data-toggle="tab" class="legitRipple">
+                                    <i class="icon-calendar2 position-left"></i>
+                                    SEMESTRE 2
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bottom-semestre-1">
+                                <!-- Table note semestre 1 -->
+                                <div class="panel panel-flat" style="box-shadow: none;">
+                                    <table class="table datatable-scroller table-note" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>Auditeur</th>
+                                            <th style="width: 100px;">Notes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="16" MAXLENGTH="2">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="15">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /Table note semestre 1 -->
+                            </div>
+                            <div class="tab-pane" id="bottom-semestre-2">
+                                <!-- Table note semestre 2 -->
+                                <div class="panel panel-flat" style="box-shadow: none;">
+                                    <table class="table datatable-scroller table-note" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>Auditeur</th>
+                                            <th style="width: 100px;">Notes</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="16">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MDG025562525</td>
+                                            <td>
+                                                <div class="tab-note-edit">
+                                                    <input type="text" style="width: 70px;" value="12.5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /Table note semestre 2 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link legitRipple" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary legitRipple">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade in"></div>
+</body>
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="application/javascript">
+    $(".tab-note-edit").on("click", function(){
+        $(this).children("span").fadeOut(0);
+        $(this).children("input").fadeIn(0);
+    });
+</script>
+<!-- /theme JS files -->
+</html>

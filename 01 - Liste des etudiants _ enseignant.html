@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Platforme de gestion des notes CNAM" />
+    <meta name="author" content="R. Narindra, R. Voahary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mes enseignements</title>
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <!-- /global stylesheets -->
+</head>
+<body>
+    <header>
+    <div class="navbar navbar-inverse bg-primary-color">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo-cnam.PNG" alt=""></a>
+
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile" class="legitRipple"><i class="icon-tree5"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-grid6 position-left"></i> Mes services <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="01%20-%20Mes%20enseignements%20_%20enseignant.html"><i class="icon-notebook"></i> Mes enseignements</a></li>
+                            <li><a href="01%20-%20Liste%20des%20etudiants%20_%20enseignant.html"><i class="icon-people"></i> Liste des etudiants</a></li>
+                            <li><a href="01%20-%20Inerer%20des%20notes%20_%20enseignant.html"><i class="icon-list"></i> Inserer des notes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/demo/users/face11.jpg" alt="">
+                            <span>Bonjour, Admin</span>
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="01%20-%20Profile%20_%20enseignant.html"><i class="icon-user-plus"></i> Mon Profile</a></li>
+                            <li><a href="00%20-%20Login.html"><i class="glyphicon glyphicon-log-out"></i> Se Deconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="page-container">
+        <div class="container">
+
+            <!-- Page header -->
+            <div class="page-header">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-users4 position-left"></i> <span class="text-semibold">Liste des etudiants</span></h4>
+                        <a class="heading-elements-toggle"><i class="icon-more"></i></a></div>
+                </div>
+
+                <div class="breadcrumb-line breadcrumb-line-component"><a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"><i class="icon-home2 position-left"></i> Acceuil</a></li>
+                        <li class="active">Liste des etudiants</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+                <div class="row">
+                    <!--
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
+                            <button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
+                            <h6 class="alert-heading text-semibold">Session timeout</h6>
+                            With these settings, session timeout plugin launches a timeout warning dialog in a fixed amount of time regardless of user activity. In this demo warning dialog appears <strong>after 10 seconds</strong> of page load.
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-lg-3 sidebar-detached">
+                        <div class="sidebar sidebar-default sidebar-separate">
+                            <div class="sidebar-content">
+                                <!-- Sidebar recherche -->
+                                <div class="panel panel-white">
+                                    <div class="panel-heading">
+                                        <div class="panel-title text-semibold">
+                                            <i class="icon-search4 text-size-base position-left"></i>
+                                            Filter
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <div class="has-feedback has-feedback-left">
+                                                    <input type="search" class="form-control" placeholder="Rechercher un etudiant ...">
+                                                    <div class="form-control-feedback">
+                                                        <i class="icon-users4 text-size-large text-muted"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>- Semestre 1 :</label>
+                                                <div class="checkbox">
+                                                    <label class="display-block">
+                                                        <input type="checkbox" class="styled">
+                                                        MVA003
+                                                        <span class="text-muted text-size-small">&nbsp;(38)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label class="display-block">
+                                                        <input type="checkbox" class="styled">
+                                                        NSY104
+                                                        <span class="text-muted text-size-small">&nbsp;(14)</span>
+                                                    </label>
+                                                </div>
+                                                <label>- Semestre 2 :</label>
+                                                <div class="checkbox">
+                                                    <label class="display-block">
+                                                        <input type="checkbox" class="styled">
+                                                        GLG105
+                                                        <span class="text-muted text-size-small">&nbsp;(20)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-default btn-block legitRipple">
+                                                <i class="icon-search4 text-size-base position-left"></i>
+                                                RECHERCHER
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /sidebar recherche -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 container-detached">
+                        <div class="content-detached">
+                            <!-- Dropdown list -->
+                            <!-- Basic datatable -->
+                            <div class="panel panel-flat">
+                                <table class="table datatable-basic">
+                                    <thead>
+                                    <tr>
+                                        <th>Auditeur</th>
+                                        <th>Nom et Prenom</th>
+                                        <th>Inscrit aux UE enseigner :</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td style="width: 170px;">MDG25645982</td>
+                                        <td>RAKOTOARISOA Narindra</td>
+                                        <td>
+                                            <span class="label label-default">NF003</span>
+                                            <span class="label label-default">NSY104</span>
+                                            <span class="label label-default">NFA031</span>
+                                            <span class="label label-default">NF003</span>
+                                            <span class="label label-default">NSY104</span>
+                                            <span class="label label-default">NFA031</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <ul class="icons-list">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-plus2"></i> Ajouter un UE</a></li>
+                                                        <li><a href="#"><i class="icon-info3"></i> Details</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 170px;">MDG34595298</td>
+                                        <td>RAKOTOARISOA Narindra</td>
+                                        <td>
+                                            <span class="label label-default">NSY104</span>
+                                            <span class="label label-default">NFA031</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <ul class="icons-list">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-plus2"></i> Ajouter un UE</a></li>
+                                                        <li><a href="#"><i class="icon-info3"></i> Details</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 170px;">MDG88955285</td>
+                                        <td>RAKOTOARISOA Narindra</td>
+                                        <td>
+                                            <span class="label label-default">NFA031</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <ul class="icons-list">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                        <i class="icon-menu9"></i>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-plus2"></i> Ajouter un UE</a></li>
+                                                        <li><a href="#"><i class="icon-info3"></i> Details</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /basic datatable -->
+                            <!-- /dropdown list -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /content area -->
+
+        </div>
+    </div>
+</body>
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+
+<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/user_pages_list.js"></script>
+
+<script type="text/javascript" src="assets/js/pages/job_list.js"></script>
+<!-- /theme JS files -->
+</html>

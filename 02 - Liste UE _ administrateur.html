@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Platforme de gestion des notes CNAM" />
+    <meta name="author" content="R. Narindra, R. Voahary" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formations/UE - Espace administrateur</title>
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <!-- /global stylesheets -->
+</head>
+<style>
+    .form-control{
+        border-top: 0px;
+        border-radius: 0px;
+    }
+</style>
+<body>
+
+<header>
+    <div class="navbar navbar-inverse bg-primary-color">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo-cnam.PNG" alt=""></a>
+
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile" class="legitRipple"><i class="icon-tree5"></i></a></li>
+                </ul>
+            </div>
+
+
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-grid6 position-left"></i> Mes services <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="02%20-%20Liste%20UE%20_%20administrateur.html"><i class="icon-notebook"></i> Formations/UE</a></li>
+                            <li><a href="02%20-%20Liste%20enseignant%20_%20administrateur.html"><i class="icon-people"></i> Enseignants</a></li>
+                            <li><a href="02%20-%20Liste%20des%20etudiants%20_%20administrateur.html"><i class="icon-people"></i> Auditeurs</a></li>
+                            <li><a href="02%20-%20Resultat%20des%20examens%20_%20administrateur.html"><i class="icon-list"></i> Resultat des examens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown dropdown-user">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/demo/users/face11.jpg" alt="">
+                            <span>Bonjour, Admin</span>
+                            <i class="caret"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="02%20-%20Profile%20_%20administrateur.html"><i class="icon-user-plus"></i> Mon Profile</a></li>
+                            <li><a href="00%20-%20Login.html"><i class="glyphicon glyphicon-log-out"></i> Se Deconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container">
+
+        <!-- Page header -->
+        <div class="page-header">
+            <div class="page-header-content">
+                <div class="page-title">
+                    <h4><i class="icon-pencil5 position-left"></i> <span class="text-semibold">Formations/UE</span></h4>
+                    <a class="heading-elements-toggle"><i class="icon-more"></i></a></div>
+            </div>
+
+            <div class="breadcrumb-line breadcrumb-line-component"><a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+                <ul class="breadcrumb">
+                    <li><a href="02%20-%20Dashboard%20_%20administrateur.html"><i class="icon-home2 position-left"></i> Acceuil</a></li>
+                    <li class="active">Formation/UE</li>
+                </ul>
+
+                <ul class="breadcrumb-elements">
+                    <li><a href="#" class="legitRipple"><i class="icon-plus2 position-left"></i> Ajouter une formation</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /page header -->
+
+
+        <!-- Content area -->
+        <div class="content">
+            <div class="row">
+                <!--
+                <div class="col-lg-12">
+                    <div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
+                        <button type="button" class="close" data-dismiss="alert"><span>×</span><span class="sr-only">Close</span></button>
+                        <h6 class="alert-heading text-semibold">Session timeout</h6>
+                        With these settings, session timeout plugin launches a timeout warning dialog in a fixed amount of time regardless of user activity. In this demo warning dialog appears <strong>after 10 seconds</strong> of page load.
+                    </div>
+                </div>
+                -->
+                <div class="col-lg-3">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <div class="panel-title text-semibold">
+                                <i class="icon-search4 text-size-base position-left"></i>
+                                Filter
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <form action="#">
+                                <div class="form-group">
+                                    <div class="has-feedback has-feedback-left">
+                                        <input type="search" class="form-control" placeholder="Rechercher un UE ...">
+                                        <div class="form-control-feedback">
+                                            <i class="icon-briefcase3 text-size-large text-muted"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <ul class="list-inline list-inline-condensed no-margin-bottom">
+                                        <li class="dropdown">
+                                            <a href="#" class="btn btn-link btn-sm dropdown-toggle legitRipple" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="icon-briefcase3 position-left"></i> Tout les formations <span class="caret"></span>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Informatique</a></li>
+                                                <li><a href="#">Gestion</a></li>
+                                                <li><a href="#">Marketing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" class="btn btn-link btn-sm legitRipple"><i class="icon-reload-alt position-left"></i> REINISIALISER</a></li>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="btn btn-default btn-block legitRipple">
+                                    <i class="icon-search4 text-size-base position-left"></i>
+                                    RECHERCHER
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="panel-group panel-group-control content-group-lg panel-formation">
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapsible-control-group1" aria-expanded="false" class="collapsed">Informatique</a>
+                                </h6>
+                            </div>
+                            <div id="collapsible-control-group1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body">
+
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs nav-tabs-bottom">
+                                            <li class="active"><a href="#bottom-tab1" data-toggle="tab" class="legitRipple">L1</a></li>
+                                            <li><a href="#bottom-tab2" data-toggle="tab" class="legitRipple">L2</a></li>
+                                            <li><a href="#bottom-tab2" data-toggle="tab" class="legitRipple">L3</a></li>
+                                            <li><a href="#bottom-tab2" data-toggle="tab" class="legitRipple">M1</a></li>
+                                            <li><a href="#bottom-tab2" data-toggle="tab" class="legitRipple">M2</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle legitRipple" data-toggle="dropdown">Ajouter <span class="caret"></span></a>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li><a href="#bottom-tab3" data-toggle="tab">Niveaux</a></li>
+                                                    <li><a href="#bottom-tab4" data-toggle="tab">UE</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="bottom-tab1">
+                                                <button type="button" class="btn btn-default btn-ue">
+                                                    MVA003
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-ue">MVA004</button>
+                                                <button type="button" class="btn btn-default btn-ue">NFA018</button>
+                                                <button type="button" class="btn btn-default btn-ue">NSY104</button>
+                                            </div>
+
+                                            <div class="tab-pane" id="bottom-tab2">
+                                                <button type="button" class="btn btn-default btn-ue">MVA010</button>
+                                                <button type="button" class="btn btn-default btn-ue">NFA011</button>
+                                                <button type="button" class="btn btn-default btn-ue">UTC504</button>
+                                            </div>
+
+                                            <div class="tab-pane" id="bottom-tab3">
+                                                DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
+                                            </div>
+
+                                            <div class="tab-pane" id="bottom-tab4">
+                                                Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapsible-control-group2">Gestion</a>
+                                </h6>
+                            </div>
+                            <div id="collapsible-control-group2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Liste des UEs
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-white">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapsible-control-group3">Marketing</a>
+                                </h6>
+                            </div>
+                            <div id="collapsible-control-group3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Liste des UEs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content area -->
+
+        <div id="modal_full" class="modal fade in" style="display: none;">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h5 class="modal-title text-bold">UE : MVA003</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs nav-tabs-bottom bottom-divided">
+                                <li class="active">
+                                    <a href="#bottom-semestre-1" data-toggle="tab" class="legitRipple">
+                                        <i class="icon-people position-left"></i>
+                                        LISTE DES AUDITEURS & RESULTATS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#bottom-semestre-2" data-toggle="tab" class="legitRipple">
+                                        <i class="icon-info3 position-left"></i>
+                                        DETAILS
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="bottom-semestre-1">
+                                    <table class="table datatable-html table-note">
+                                        <thead>
+                                        <tr>
+                                            <th>Auditeur</th>
+                                            <th>Nom et prenom</th>
+                                            <th>Notes S1</th>
+                                            <th>Notes S2</th>
+                                            <th class="text-center">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>MDG55665852</td>
+                                            <td>RAKOTOARISOA Narindra</td>
+                                            <td>14</td>
+                                            <td>--</td>
+                                            <td class="text-center">
+                                                <ul class="icons-list">
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                            <i class="icon-menu9"></i>
+                                                        </a>
+
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+                                                            <li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+                                                            <li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>MDG25646525</td>
+                                            <td>Hery Randria</td>
+                                            <td>14</td>
+                                            <td>--</td>
+                                            <td class="text-center">
+                                                <ul class="icons-list">
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                            <i class="icon-menu9"></i>
+                                                        </a>
+
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#"><i class="icon-file-pdf"></i> Export to .pdf</a></li>
+                                                            <li><a href="#"><i class="icon-file-excel"></i> Export to .csv</a></li>
+                                                            <li><a href="#"><i class="icon-file-word"></i> Export to .doc</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane" id="bottom-semestre-2">
+                                    <form action="#" class="form-horizontal">
+                                        <fieldset class="content-group">
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Code UE *</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre nom ...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Intituler</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre prenom...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">ECTS *</label>
+                                                <div class="col-lg-2">
+                                                    <input type="text" class="form-control" placeholder="Entrer votre prenom...">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Examen *</label>
+                                                <div class="col-lg-2">
+                                                    <select class="form-control bootstrap-select" data-width="100%">
+                                                        <option value="AK">Semestre 1</option>
+                                                        <option value="HI">Semestre 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-2">Tuteur</label>
+                                                <div class="col-lg-4">
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control" value="Mr Monsieur" readonly>
+                                                        <span class="input-group-btn">
+													<button class="btn btn-default legitRipple" type="button">CHANGER</button>
+												</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="text-left">
+                                            <button type="submit" class="btn btn-primary legitRipple">Enregister les mofications <i class="icon-arrow-right14 position-right"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-backdrop fade in" style="display: none"></div>
+
+        <div class="page-container" style="display: none;"></div>
+    </div>
+</body>
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/datatables_data_sources.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+
+<script type="text/javascript" src="assets/js/pages/form_bootstrap_select.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+
+<!-- Theme JS files -->
+<script type="application/javascript">
+    $(".tab-note-edit").on("click", function(){
+        $(this).children("span").fadeOut(0);
+        $(this).children("input").fadeIn(0);
+    });
+</script>
+<!-- /theme JS files -->
+</html>
